@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock Price Analytics | Data Analyst Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background: #f3f4f6;
+        margin: 0;
+        color: #1f2937;
+      }
+      .project-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        z-index: 1000;
+        padding: 1rem 0;
+        border-bottom: 1px solid #e5e7eb;
+      }
+      .project-nav .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .back-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: #10b981;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s ease;
+      }
+      .back-btn:hover {
+        color: #2563eb;
+      }
+      .project-hero {
+        background: linear-gradient(135deg, #10b981, #2563eb);
+        color: white;
+        padding: 8rem 0 4rem;
+        text-align: center;
+      }
+      .project-content {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 4rem 2rem;
+        line-height: 1.8;
+      }
+      .dashboard-img {
+        border-radius: 1rem;
+        box-shadow: 0 2px 12px rgba(16, 185, 129, 0.1);
+        margin: 2rem 0;
+        max-width: 100%;
+      }
+      .project-meta {
+        display: flex;
+        gap: 2rem;
+        margin: 2rem 0;
+        padding: 2rem;
+        background: #f9fafb;
+        border-radius: 1rem;
+      }
+      .meta-item h4 {
+        color: #374151;
+        margin-bottom: 0.5rem;
+      }
+      .result-highlight {
+        background: linear-gradient(135deg, #2563eb, #10b981);
+        color: white;
+        padding: 2rem;
+        border-radius: 1rem;
+        text-align: center;
+        margin: 2rem 0;
+      }
+      .process-step {
+        margin: 2rem 0;
+        padding: 2rem;
+        border-left: 4px solid #10b981;
+        background: #f9fafb;
+        border-radius: 0 1rem 1rem 0;
+      }
+      .tech-tag {
+        text-align: center;
+        padding: 1rem;
+        background: #f3f4f6;
+        border-radius: 0.5rem;
+        font-weight: bold;
+      }
+      ul {
+        margin-left: 2rem;
+        padding-left: 0.7rem;
+      }
+      h2,
+      h3 {
+        color: #2563eb;
+        margin-top: 2.5rem;
+      }
+      .btn-container {
+        display: inline-block;
+        padding: 1rem 2rem;
+        background: #f9fafb;
+        border-radius: 1rem;
+        box-shadow: 0 2px 8px rgba(37, 99, 235, 0.06);
+        margin-top: 2rem;
+      }
+      .btn.btn-secondary {
+        color: #2563eb;
+        font-weight: 600;
+        text-decoration: none;
+        border: none;
+        background: none;
+        font-size: 1rem;
+        transition: color 0.3s ease;
+      }
+
+      .btn.btn-secondary:hover {
+        color: #10b981;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="project-nav">
+      <div class="container">
+        <a href="../index.html" class="back-btn">
+          <i class="fas fa-arrow-left"></i>
+          Back to Portfolio
+        </a>
+        <div class="project-nav-title">Stock Price Analytics</div>
+      </div>
+    </nav>
+
+    <section class="project-hero">
+      <div class="container">
+        <h1>Stock Price Analytics Project</h1>
+        <p>
+          Advanced EDA, time-series analytics, and Power BI dashboard for stock
+          market optimization
+        </p>
+        <div class="btn-container">
+          <a
+            href="https://github.com/Benarjeechowdary/Stock-Price-Analysis"
+            class="btn btn-secondary"
+            target="_blank"
+          >
+            <i class="fab fa-github"></i> View Code
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="project-content">
+      <img
+        src="../images/Stocks-Dashboard.png"
+        alt="Stock Price Dashboard"
+        class="dashboard-img"
+      />
+
+      <div class="project-meta">
+        <div class="meta-item">
+          <h4>Duration</h4>
+          <p>5 weeks</p>
+        </div>
+        <div class="meta-item">
+          <h4>Technologies</h4>
+          <p>Python, Pandas, Power BI, Excel</p>
+        </div>
+        <div class="meta-item">
+          <h4>Dataset Size</h4>
+          <p>5 years, 3 Companies</p>
+        </div>
+        <div class="meta-item">
+          <h4>Team</h4>
+          <p>Individual Project</p>
+        </div>
+      </div>
+
+      <h2>Project Overview</h2>
+      <p>
+        Built an interactive dashboard and analytics solution for Apple, Google,
+        and Meta stock data (2017–2022). Utilized advanced EDA and time-series
+        methods in Power BI to visualize prices, trading volumes, and key
+        financial metrics.
+      </p>
+
+      <h2>Business Problem</h2>
+      <ul>
+        <li>
+          Analyzed yearly open, close, high, low, and adjusted prices for market
+          insights
+        </li>
+        <li>
+          Detected surges (2021 peak prices; 2020 volumes) for investment timing
+          strategy
+        </li>
+        <li>
+          Compared performance and volatility, guiding stakeholders’ portfolio
+          decisions
+        </li>
+        <li>Visualized comparative metrics for business communication</li>
+      </ul>
+
+      <h2>Data Analysis Process</h2>
+      <div class="process-step">
+        <h3>1. Data Acquisition & Cleaning</h3>
+        <p>
+          Aggregated, validated, and cleaned NASDAQ stock history for Apple,
+          Google, Meta (2017–2022) to ensure analysis accuracy.
+        </p>
+      </div>
+      <div class="process-step">
+        <h3>2. Exploratory Data Analysis</h3>
+        <p>
+          Examined price trends, volume patterns, and annual KPIs with Python
+          and Power BI. Identified leader companies and unique market events.
+        </p>
+      </div>
+      <div class="process-step">
+        <h3>3. Dashboard Development</h3>
+        <p>
+          Designed a Power BI dashboard for intuitive visualization of stock
+          averages, highs/lows, and trading volume peaks.
+        </p>
+      </div>
+      <div class="process-step">
+        <h3>4. Insights Generation</h3>
+        <p>
+          Delivered actionable findings and strategic recommendations for
+          improved market decisions.
+        </p>
+      </div>
+
+      <h2>Key Findings</h2>
+      <div class="result-highlight">
+        <h3>Business Impact</h3>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 1rem;
+          "
+        >
+          <div>
+            <div style="font-size: 2rem; font-weight: 700">Meta</div>
+            <div>Highest prices across metrics</div>
+          </div>
+          <div>
+            <div style="font-size: 2rem; font-weight: 700">Apple</div>
+            <div>Peak volume 172M in 2020</div>
+          </div>
+          <div>
+            <div style="font-size: 2rem; font-weight: 700">396</div>
+            <div>Avg Close Price</div>
+          </div>
+          <div>
+            <div style="font-size: 2rem; font-weight: 700">400</div>
+            <div>Avg High Price</div>
+          </div>
+          <div>
+            <div style="font-size: 2rem; font-weight: 700">394</div>
+            <div>Avg Adj Close Price</div>
+          </div>
+        </div>
+        <p>
+          Improved investment timing and risk management; delivered a robust
+          visualization tool to enhance decisions and communication for
+          investors.
+        </p>
+      </div>
+
+      <h2>Tools & Technologies Used</h2>
+      <div
+        style="
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+          gap: 1rem;
+          margin: 2rem 0;
+        "
+      >
+        <div class="tech-tag">Python</div>
+        <div class="tech-tag">Pandas</div>
+        <div class="tech-tag">Power BI</div>
+        <div class="tech-tag">Excel</div>
+      </div>
+
+      <h2>Lessons Learned</h2>
+      <ul>
+        <li>Robust data cleaning is essential for financial analytics</li>
+        <li>Effective visualization speeds up portfolio decisions</li>
+        <li>Data-driven insights support strategic market actions</li>
+      </ul>
+
+      <div style="text-align: center; margin: 3rem 0">
+        <a href="../index.html" class="btn btn-primary">
+          <i class="fas fa-arrow-left"></i>
+          Back to Portfolio
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

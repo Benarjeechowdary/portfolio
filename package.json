@@ -1,0 +1,44 @@
+{
+  "name": "data-analyst-portfolio",
+  "version": "1.0.0",
+  "description": "Professional Data Analyst Portfolio Website",
+  "main": "website/index.html",
+  "scripts": {
+    "start": "python -m http.server 3000 --directory website",
+    "dev": "python -m http.server 3000 --directory website",
+    "build": "echo 'Building for production...' && npm run optimize",
+    "optimize": "echo 'Optimizing assets...'",
+    "deploy": "npm run build && echo 'Ready for deployment'",
+    "serve": "node server.js"
+  },
+  "keywords": [
+    "data-analyst",
+    "portfolio",
+    "data-science",
+    "visualization",
+    "python",
+    "sql",
+    "tableau"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/data-analyst-portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/data-analyst-portfolio/issues"
+  },
+  "homepage": "https://yourusername.github.io/data-analyst-portfolio",
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}

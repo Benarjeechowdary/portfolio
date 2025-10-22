@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Sales Analysis | Data Analyst Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background: #f3f4f6;
+        margin: 0;
+        color: #1f2937;
+      }
+      .project-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        z-index: 1000;
+        padding: 1rem 0;
+        border-bottom: 1px solid #e5e7eb;
+      }
+      .project-nav .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .back-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: #10b981;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s ease;
+      }
+      .back-btn:hover {
+        color: #2563eb;
+      }
+      .project-hero {
+        background: linear-gradient(135deg, #10b981, #2563eb);
+        color: white;
+        padding: 8rem 0 4rem;
+        text-align: center;
+      }
+      .project-content {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 4rem 2rem;
+        line-height: 1.8;
+      }
+      .dashboard-img {
+        border-radius: 1rem;
+        box-shadow: 0 2px 12px rgba(16, 185, 129, 0.1);
+        margin: 2rem 0;
+        max-width: 100%;
+      }
+      .project-meta {
+        display: flex;
+        gap: 2rem;
+        margin: 2rem 0;
+        padding: 2rem;
+        background: #f9fafb;
+        border-radius: 1rem;
+      }
+      .meta-item h4 {
+        color: #374151;
+        margin-bottom: 0.5rem;
+      }
+      .result-highlight {
+        background: linear-gradient(135deg, #2563eb, #10b981);
+        color: white;
+        padding: 2rem;
+        border-radius: 1rem;
+        text-align: center;
+        margin: 2rem 0;
+      }
+      .process-step {
+        margin: 2rem 0;
+        padding: 2rem;
+        border-left: 4px solid #10b981;
+        background: #f9fafb;
+        border-radius: 0 1rem 1rem 0;
+      }
+      .tech-tag {
+        text-align: center;
+        padding: 1rem;
+        background: #f3f4f6;
+        border-radius: 0.5rem;
+        font-weight: bold;
+      }
+      ul {
+        margin-left: 2rem;
+        padding-left: 0.7rem;
+      }
+      h2,
+      h3 {
+        color: #2563eb;
+        margin-top: 2.5rem;
+      }
+      .btn-container {
+        display: inline-block;
+        padding: 1rem 2rem;
+        background: #f9fafb;
+        border-radius: 1rem;
+        box-shadow: 0 2px 8px rgba(37, 99, 235, 0.06);
+        margin-top: 2rem;
+      }
+      .btn.btn-secondary {
+        color: #2563eb;
+        font-weight: 600;
+        text-decoration: none;
+        border: none;
+        background: none;
+        font-size: 1rem;
+        transition: color 0.3s ease;
+      }
+      .btn.btn-secondary:hover {
+        color: #10b981;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="project-nav">
+      <div class="container">
+        <a href="../index.html" class="back-btn">
+          <i class="fas fa-arrow-left"></i>
+          Back to Portfolio
+        </a>
+        <div class="project-nav-title">Pizza Sales Analysis</div>
+      </div>
+    </nav>
+
+    <section class="project-hero">
+      <div class="container">
+        <h1>Pizza Sales Analytics Project</h1>
+        <p>
+          Advanced SQL, Excel analytics, and interactive Power BI dashboard for
+          optimizing pizza business strategy
+        </p>
+        <div class="btn-container">
+          <a
+            href="https://github.com/Benarjeechowdary/Pizza-Sales-Analysis"
+            class="btn btn-secondary"
+            target="_blank"
+          >
+            <i class="fab fa-github"></i> View Code
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="project-content">
+      <img
+        src="../images/Pizza.png"
+        alt="Pizza Sales Dashboard"
+        class="dashboard-img"
+      />
+
+      <div class="project-meta">
+        <div class="meta-item">
+          <h4>Duration</h4>
+          <p>4 weeks</p>
+        </div>
+        <div class="meta-item">
+          <h4>Technologies</h4>
+          <p>SQL, Excel, Power BI</p>
+        </div>
+        <div class="meta-item">
+          <h4>Dataset Size</h4>
+          <p>21,350 Orders, 49,574 Pizzas</p>
+        </div>
+        <div class="meta-item">
+          <h4>Team</h4>
+          <p>Individual Project</p>
+        </div>
+      </div>
+
+      <h2>Project Overview</h2>
+      <p>
+        Built an end-to-end pizza sales dashboard and analytics solution using
+        SQL and Power BI. Uncovered key metrics and trends in revenue, order
+        volumes, and product performance to empower strategic business
+        decisions.
+      </p>
+
+      <h2>Business Problem</h2>
+      <ul>
+        <li>
+          Integrated and cleaned sales data from thousands of transactions to
+          deliver unified analytics
+        </li>
+        <li>
+          Analyzed total revenue ($817,860), order patterns, pizza size/category
+          performance, and seasonal trends
+        </li>
+        <li>
+          Identified sales drivers, under-performing categories, and peak order
+          hours for targeted marketing and inventory optimization
+        </li>
+        <li>
+          Visualized results to drive effective stakeholder communication and
+          business planning
+        </li>
+      </ul>
+
+      <h2>Data Analysis Process</h2>
+      <div class="process-step">
+        <h3>1. Data Acquisition & Cleaning</h3>
+        <p>
+          Imported pizza sales data, handled missing values, and standardized
+          records for robust analysis.
+        </p>
+      </div>
+      <div class="process-step">
+        <h3>2. Exploratory Data Analysis</h3>
+        <p>
+          Used SQL and Excel to extract KPIs: total revenue, average order value
+          ($38), pizzas per order (2.32), top-selling pizzas, least-selling
+          categories.
+        </p>
+      </div>
+      <div class="process-step">
+        <h3>3. Power BI Dashboard</h3>
+        <p>
+          Developed interactive visuals for sales trends, category breakdowns,
+          and product rankings.
+        </p>
+      </div>
+      <div class="process-step">
+        <h3>4. Insights & Strategy</h3>
+        <p>
+          Provided actionable recommendations that improved inventory
+          management, boosted revenue, and optimized marketing timeframe and
+          product focus.
+        </p>
+      </div>
+
+      <h2>Key Findings</h2>
+      <div class="result-highlight">
+        <h3>Business Impact</h3>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 1rem;
+          "
+        >
+          <div>
+            <div style="font-size: 2rem; font-weight: 700">$817,860</div>
+            <div>Total Revenue Generated</div>
+          </div>
+          <div>
+            <div style="font-size: 2rem; font-weight: 700">49,574</div>
+            <div>Pizzas Sold</div>
+          </div>
+          <div>
+            <div style="font-size: 2rem; font-weight: 700">2.32</div>
+            <div>Avg Pizzas Per Order</div>
+          </div>
+          <div>
+            <div style="font-size: 2rem; font-weight: 700">$38</div>
+            <div>Avg Order Value</div>
+          </div>
+          <div>
+            <div style="font-size: 2rem; font-weight: 700">21,350</div>
+            <div>Total Orders</div>
+          </div>
+        </div>
+        <p>
+          Enhanced business strategy: improvements in resource allocation,
+          marketing, and product selection based on quantitative insights and
+          data-driven recommendations.
+        </p>
+      </div>
+
+      <h2>Tools & Technologies Used</h2>
+      <div
+        style="
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+          gap: 1rem;
+          margin: 2rem 0;
+        "
+      >
+        <div class="tech-tag">SQL</div>
+        <div class="tech-tag">Excel</div>
+        <div class="tech-tag">Power BI</div>
+      </div>
+
+      <h2>Lessons Learned</h2>
+      <ul>
+        <li>Data cleaning and integration are critical for sales analytics</li>
+        <li>
+          Interactive dashboards increase insights and support business
+          communication
+        </li>
+        <li>Data-driven decisions optimize revenue and inventory</li>
+      </ul>
+
+      <div style="text-align: center; margin: 3rem 0">
+        <a href="../index.html" class="btn btn-primary">
+          <i class="fas fa-arrow-left"></i>
+          Back to Portfolio
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospital Management Analytics | Data Analyst Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      .project-hero {
+        background: linear-gradient(135deg, #10b981, #2563eb);
+        color: white;
+        padding: 8rem 0 4rem;
+        text-align: center;
+      }
+      .project-content {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 4rem 2rem;
+        line-height: 1.8;
+      }
+      .project-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        z-index: 1000;
+        padding: 1rem 0;
+      }
+      .project-nav .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .back-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: #10b981;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s ease;
+      }
+      .back-btn:hover {
+        color: #2563eb;
+      }
+      .project-meta {
+        display: flex;
+        gap: 2rem;
+        margin: 2rem 0;
+        padding: 2rem;
+        background: #f9fafb;
+        border-radius: 1rem;
+      }
+      .meta-item h4 {
+        color: #374151;
+        margin-bottom: 0.5rem;
+      }
+      .result-highlight {
+        background: linear-gradient(135deg, #2563eb, #10b981);
+        color: white;
+        padding: 2rem;
+        border-radius: 1rem;
+        text-align: center;
+        margin: 2rem 0;
+      }
+      .dashboard-img {
+        border-radius: 1rem;
+        box-shadow: 0 2px 12px rgba(16, 185, 129, 0.1);
+        margin: 2rem 0;
+        max-width: 100%;
+      }
+      .process-step {
+        margin: 2rem 0;
+        padding: 2rem;
+        border-left: 4px solid #10b981;
+        background: #f9fafb;
+        border-radius: 0 1rem 1rem 0;
+      }
+      .tech-tag {
+        text-align: center;
+        padding: 1rem;
+        background: #f3f4f6;
+        border-radius: 0.5rem;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="project-nav">
+      <div class="container">
+        <a href="../index.html" class="back-btn">
+          <i class="fas fa-arrow-left"></i>
+          Back to Portfolio
+        </a>
+        <div class="project-nav-title">Hospital Management Analytics</div>
+      </div>
+    </nav>
+
+    <section class="project-hero">
+      <div class="container">
+        <h1>Hospital Management Analytics Project</h1>
+        <p>
+          Advanced EDA, predictive analytics, and interactive Power BI dashboard
+          for healthcare operations optimization
+        </p>
+        <div style="margin-top: 2rem">
+          <a
+            href="https://github.com/Benarjeechowdary/Hospital-Management"
+            class="btn btn-secondary"
+            target="_blank"
+          >
+            <i class="fab fa-github"></i> View Code
+          </a>
+          <!-- <a href="#" class="btn btn-primary">
+            <i class="fas fa-chart-line"></i> Dashboard Demo
+          </a> -->
+        </div>
+      </div>
+    </section>
+
+    <div class="project-content">
+      <img
+        src="../images/Hospital.png"
+        alt="Hospital Management Dashboard"
+        class="dashboard-img"
+      />
+
+      <div class="project-meta">
+        <div class="meta-item">
+          <h4>Duration</h4>
+          <p>4 weeks</p>
+        </div>
+        <div class="meta-item">
+          <h4>Technologies</h4>
+          <p>Python, Pandas, Power BI, Seaborn, Excel</p>
+        </div>
+        <div class="meta-item">
+          <h4>Dataset Size</h4>
+          <p>2,500+ patient records</p>
+        </div>
+        <div class="meta-item">
+          <h4>Team</h4>
+          <p>Individual Project</p>
+        </div>
+      </div>
+
+      <h2>Project Overview</h2>
+      <p>
+        Developed a fully interactive hospital analytics dashboard leveraging
+        <strong>advanced EDA</strong> and <strong>predictive modeling</strong>.
+        Identified <strong>utilization trends</strong>, optimized
+        <strong>bed management</strong>, and enhanced
+        <strong>operation efficiency</strong> using real-world healthcare data.
+      </p>
+
+      <h2>Business Problem</h2>
+      <p>This project addressed key healthcare challenges by:</p>
+      <ul>
+        <li>Detecting peak patient admissions (March, 904 patients)</li>
+        <li>Managing 30% missing data across critical fields</li>
+        <li>
+          Recommending actionable improvements for hospital resource allocation
+        </li>
+        <li>Improving operational planning accuracy by 25%</li>
+      </ul>
+
+      <h2>Data Analysis Process</h2>
+      <div class="process-step">
+        <h3>1. Data Acquisition & Cleaning</h3>
+        <p>
+          Imported hospital data from Excel, handled 30% missing values, and
+          integrated multiple departmental datasets for unified analytics.
+        </p>
+      </div>
+      <div class="process-step">
+        <h3>2. Exploratory Data Analysis</h3>
+        <p>
+          Utilized Python, Pandas, and Seaborn for patient flow, treatment cost
+          distribution, and monthly admissions trend analysis.
+        </p>
+      </div>
+      <div class="process-step">
+        <h3>3. Power BI Dashboard Development</h3>
+        <p>
+          Visualized KPIs (patient, bed, treatment cost), segmented data by
+          city/department, and enabled interactive status filtering.
+        </p>
+      </div>
+      <div class="process-step">
+        <h3>4. Results & Optimization</h3>
+        <p>
+          Delivered actionable insights that boosted planning and patient
+          management efficiency by 25%.
+        </p>
+      </div>
+
+      <h2>Key Findings</h2>
+      <div class="result-highlight">
+        <h3>Business Impact</h3>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 1rem;
+          "
+        >
+          <div>
+            <div style="font-size: 2rem; font-weight: 700">2,506</div>
+            <div>Total Patients Analyzed</div>
+          </div>
+          <div>
+            <div style="font-size: 2rem; font-weight: 700">372.9K</div>
+            <div>Total Treatment Cost</div>
+          </div>
+          <div>
+            <div style="font-size: 2rem; font-weight: 700">1,680</div>
+            <div>Total Beds</div>
+          </div>
+          <div>
+            <div style="font-size: 2rem; font-weight: 700">904</div>
+            <div>Peak Admissions (March)</div>
+          </div>
+        </div>
+      </div>
+
+      <h2>Tools & Technologies Used</h2>
+      <div
+        style="
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+          gap: 1rem;
+          margin: 2rem 0;
+        "
+      >
+        <div class="tech-tag">Python</div>
+        <div class="tech-tag">Pandas</div>
+        <div class="tech-tag">Seaborn</div>
+        <div class="tech-tag">Power BI</div>
+        <div class="tech-tag">Excel</div>
+      </div>
+
+      <h2>Lessons Learned</h2>
+      <ul>
+        <li>Importance of robust data cleaning for healthcare analytics</li>
+        <li>Leveraging interactive dashboards for business communication</li>
+        <li>Translating quantitative analysis into operational improvements</li>
+        <li>Data-driven hospital resource planning</li>
+      </ul>
+
+      <div style="text-align: center; margin: 3rem 0">
+        <a href="../index.html" class="btn btn-primary">
+          <i class="fas fa-arrow-left"></i>
+          Back to Portfolio
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
